@@ -1,1 +1,1 @@
-A simple Docker application that uses express
+A simple express application for me to learn Docker

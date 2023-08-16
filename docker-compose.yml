@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   nginx:
     image: nginx:stable-alpine
@@ -12,19 +12,17 @@ services:
       - PORT=3000
     depends_on:
       - mongo
-  
+
   mongo:
     image: mongo
     environment:
       - MONGO_INITDB_ROOT_USERNAME=robinmuhia
-      - MONGO_INITDB_ROOT_PASSWORD=Muhia2015
+      - MONGO_INITDB_ROOT_PASSWORD=qwertyuiop
     volumes:
       - mongo-db:/data/db
-  
+
   redis:
     image: redis
-    
+
 volumes:
   mongo-db:
-
-
